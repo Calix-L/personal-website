@@ -262,27 +262,31 @@ main { min-width: 0; }
 .education-list { display: grid; }
 .education-item {
   display: grid;
-  grid-template-columns: 58px minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 14px;
   align-items: start;
   padding: 13px 0;
   border-bottom: 1px solid #f0f2f4;
 }
 .education-item h3 { margin-top: 3px; }
 .education-logo-frame {
-  width: 58px;
-  height: 58px;
-  display: grid;
-  place-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 10px;
+  margin-top: 4px;
 }
+.education-item > .education-logo-frame { justify-self: center; }
 .education-logo { display: block; width: 46px; height: 46px; object-fit: contain; flex: none; }
 .education-logo-ecnu { object-fit: cover; object-position: left center; }
 .education-logo-hubu { width: 68px; height: auto; max-width: none; transform: translateY(2px); }
-.education-partner-logos { display: grid; gap: 7px; }
+.education-partner-logos { display: flex; align-items: center; justify-content: center; gap: 8px; padding-top: 4px; }
+.education-partner-logos .education-logo-frame { width: 39px; height: 44px; margin-top: 0; flex: none; }
+.education-partner-logos .education-logo-hubu { width: 57px; }
+.education-partner-logos .education-logo-mmu { width: 38px; height: 42px; }
 .education-logo-mmu { width: 46px; height: 48px; }
 .honors { list-style: none; margin: 8px 0 0; padding: 0; }
 .honors li { display: grid; grid-template-columns: 43px 1fr; gap: 7px; padding: 5px 0; color: var(--muted); font-size: 12.8px; line-height: 1.4; }
