@@ -269,19 +269,21 @@ main { min-width: 0; }
   border-bottom: 1px solid #f0f2f4;
 }
 .education-item h3 { margin-top: 3px; }
-.education-logo {
+.education-logo-frame {
   width: 58px;
   height: 58px;
-  display: block;
-  object-fit: contain;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 10px;
 }
+.education-logo { display: block; width: 46px; height: 46px; object-fit: contain; flex: none; }
 .education-logo-ecnu { object-fit: cover; object-position: left center; }
-.education-logo-hubu { padding: 3px; }
+.education-logo-hubu { width: 68px; height: auto; max-width: none; transform: translateY(2px); }
 .education-partner-logos { display: grid; gap: 7px; }
-.education-logo-mmu { padding: 3px; }
+.education-logo-mmu { width: 46px; height: 48px; }
 .honors { list-style: none; margin: 8px 0 0; padding: 0; }
 .honors li { display: grid; grid-template-columns: 43px 1fr; gap: 7px; padding: 5px 0; color: var(--muted); font-size: 12.8px; line-height: 1.4; }
 
