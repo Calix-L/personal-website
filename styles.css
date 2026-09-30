@@ -214,6 +214,17 @@ main { min-width: 0; }
 .project-list article { padding: 15px 17px 16px; background: #fafbfc; border: 1px solid var(--line); border-radius: 4px; }
 .project-list h3 { margin: 0 0 5px; font-size: 15px; }
 .project-list p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.48; }
+.project-list .project-card { display: flex; flex-direction: column; padding: 20px; }
+.project-list .project-category { margin-bottom: 8px; font-size: 10px; letter-spacing: .06em; font-weight: 650; color: #77818c; }
+.project-card h3 { font-size: 17px; margin-bottom: 9px; overflow-wrap: anywhere; }
+.project-metrics { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 15px 0 0; padding-bottom: 13px; border-bottom: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+.project-metrics a { color: #526273; }
+.project-metrics strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+.project-highlights { margin: 14px 0 18px; padding-left: 17px; font-size: 12.8px; color: var(--muted); line-height: 1.55; }
+.project-highlights li + li { margin-top: 7px; }
+.project-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 9px 15px; margin-top: auto; font-size: 12px; }
+.project-primary-link { font-weight: 650; }
+.project-list .project-stat-note { margin-top: 14px; font-size: 10.5px; color: #7c8793; }
 
 .timeline article {
   display: grid;
