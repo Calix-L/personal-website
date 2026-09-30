@@ -115,6 +115,9 @@ img { display: block; max-width: 100%; }
   text-align: center;
 }
 .profile-links a:hover { color: var(--blue); }
+.profile-links .profile-brand-icon { font-family: Arial, sans-serif; font-weight: 700; }
+.kaggle-status { margin: 12px 0 0 20px; color: var(--blue); font-size: 12px; font-weight: 600; }
+.kaggle-status span { margin: 0 3px; color: #8a929b; }
 
 main { min-width: 0; }
 .about { padding: 1px 0 15px; }
@@ -329,6 +332,7 @@ footer p { margin: 0; }
   .profile { position: static; display: grid; grid-template-columns: 145px 1fr; column-gap: 25px; align-items: start; }
   .portrait { width: 145px; height: 145px; grid-row: 1 / span 5; margin: 0; }
   .profile-links { grid-template-columns: repeat(2, max-content); column-gap: 18px; margin-top: 14px; }
+  .kaggle-status { grid-column: 2; margin-top: 10px; }
 }
 
 @media (max-width: 620px) {
@@ -343,6 +347,7 @@ footer p { margin: 0; }
   .role { font-size: 13.5px; }
   .affiliation { font-size: 12.5px; }
   .profile-links { grid-column: 1 / -1; grid-template-columns: repeat(2, 1fr); margin-top: 17px; }
+  .kaggle-status { grid-column: 1 / -1; }
   .news-list time { width: 70px; }
   .publication { grid-template-columns: 1fr; gap: 12px; padding: 18px 0 20px; }
   .teaser-wrap { width: min(100%, 360px); height: 205px; }
