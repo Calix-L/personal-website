@@ -252,13 +252,34 @@ main { min-width: 0; }
 .logo-kingsoft { padding: 6px 3px; }
 .logo-zai { padding: 0; }
 .logo-teleai { padding: 1px; border-radius: 50%; }
-.timeline time, .simple-item time, .honors time { color: var(--blue); font-size: 12.5px; font-weight: 650; }
-.timeline h3, .simple-item h3 { margin: 0 0 4px; font-size: 14.5px; line-height: 1.4; }
-.timeline p, .simple-item p { margin: 0; color: var(--muted); font-size: 13px; }
+.timeline time, .simple-item time, .education-item time, .honors time { color: var(--blue); font-size: 12.5px; font-weight: 650; }
+.timeline h3, .simple-item h3, .education-item h3 { margin: 0 0 4px; font-size: 14.5px; line-height: 1.4; }
+.timeline p, .simple-item p, .education-item p { margin: 0; color: var(--muted); font-size: 13px; }
 
 .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; }
 .simple-item { padding-top: 13px; }
 .simple-item h3 { margin-top: 4px; }
+.education-list { display: grid; }
+.education-item {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  padding: 13px 0;
+  border-bottom: 1px solid #f0f2f4;
+}
+.education-item h3 { margin-top: 3px; }
+.education-logo {
+  width: 58px;
+  height: 58px;
+  display: block;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.education-logo-ecnu { object-fit: cover; object-position: left center; }
+.education-logo-hubu { padding: 3px; }
 .honors { list-style: none; margin: 8px 0 0; padding: 0; }
 .honors li { display: grid; grid-template-columns: 43px 1fr; gap: 7px; padding: 5px 0; color: var(--muted); font-size: 12.8px; line-height: 1.4; }
 
